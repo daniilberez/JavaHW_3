@@ -1,0 +1,28 @@
+public class HomeWork2 {
+    public static void main(String[] args) {
+
+        boolean isWeekend = true;
+        boolean isRain = false;
+        boolean canWalk = isWeekend && isRain;
+
+        //   -------------------------------------
+        boolean isEdekaOpen = true;
+        boolean isReweOpen = false;
+        System.out.println("Я могу купить еду, это " + canBuy(isEdekaOpen, isReweOpen));
+        //   -------------------------------------
+
+        int temp1 = 101;
+        int temp2 = 99;
+        System.out.println(testMachine(temp1, temp2));
+       }
+
+
+    public static boolean canBuy(boolean isEdekaOpen, boolean isReweOpen){
+        return isEdekaOpen || isReweOpen;
+    }
+
+    private static boolean testMachine(int temp1, int temp2) {
+        boolean resultTest = (temp1 > 100) && (temp2 < 100);
+        return resultTest;
+    }
+}
